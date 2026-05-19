@@ -74,7 +74,7 @@ col_kiri, col_kanan = st.columns([1, 1], gap="large")
 # KOLOM KIRI — Input spesifikasi
 # ════════════════════════════════════════════════════════════════════════════
 with col_kiri:
-    st.subheader("📋 Prediksi Harga Mobil")
+    st.subheader("Prediksi Harga Mobil")
     st.caption("Geser slider untuk menyesuaikan spesifikasi mobil")
 
     # Ambil min/max dari dataset agar slider relevan
@@ -119,7 +119,7 @@ with col_kiri:
     )
 
     # Tombol prediksi — utama
-    hitung = st.button("🔍 Hitung Harga Mobil", type="primary", use_container_width=True)
+    hitung = st.button("Hitung Harga Mobil", type="primary", use_container_width=True)
 
 # ════════════════════════════════════════════════════════════════════════════
 # KOLOM KANAN — Hasil prediksi
@@ -186,11 +186,11 @@ with col_kanan:
         # ── Ringkasan spesifikasi input ───────────────────────────────────────
         st.markdown("**Spesifikasi yang Diinputkan:**")
         label_map = {
-            'Engine_size'    : 'Variable 1 — Engine Size',
-            'Horsepower'     : 'Variable 2 — Horsepower',
-            'Fuel_efficiency': 'Variable 3 — Fuel Efficiency',
-            'Wheelbase'      : 'Variable 4 — Wheelbase',
-            'Curb_weight'    : 'Variable 5 — Curb Weight',
+            'Engine_size'    : 'Engine Size',
+            'Horsepower'     : 'Horsepower',
+            'Fuel_efficiency': 'Fuel Efficiency',
+            'Wheelbase'      : 'Wheelbase',
+            'Curb_weight'    : 'Curb Weight',
         }
         unit_map = {
             'Engine_size': 'L', 'Horsepower': 'HP',
